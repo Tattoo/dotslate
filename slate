@@ -1,0 +1,24 @@
+# This is the default .slate file.
+# If no ~/.slate file exists this is the file that will be used.
+
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Resize Bindings
+bind right:alt;ctrl;shift       resize +10% +0
+bind left:alt;ctrl;shift        resize -10% +0
+bind up:alt;ctrl;shift          resize +0   -10%
+bind down:alt;ctrl;shift        resize +0   +10%
+
+# Push Bindings
+bind right:ctrl;cmd  push right bar-resize:screenSizeX/2
+bind left:ctrl;cmd   push left  bar-resize:screenSizeX/2
+bind space:ctrl;cmd  corner top-left resize:screenSizeX;screenSizeY
+
+# Throw Bindings
+bind 1:ctrl;cmd         throw 0 resize
+bind 2:ctrl;cmd         throw 1 resize
+
+# Window Hints
+bind esc:cmd hint
