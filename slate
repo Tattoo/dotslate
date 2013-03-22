@@ -1,5 +1,4 @@
-# This is the default .slate file.
-# If no ~/.slate file exists this is the file that will be used.
+# My confs
 
 config defaultToCurrentScreen true
 config nudgePercentOf screenSize
@@ -19,6 +18,8 @@ bind space:ctrl;cmd  corner top-left resize:screenSizeX;screenSizeY
 # Throw Bindings
 bind 1:ctrl;cmd         throw 0 resize
 bind 2:ctrl;cmd         throw 1 resize
+bind 1:ctrl;alt;cmd     throw 0
+bind 2:ctrl;alt;cmd     throw 1
 
 # Window Hints
 bind esc:cmd hint
