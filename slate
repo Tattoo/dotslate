@@ -19,6 +19,12 @@ bind 2:ctrl;alt  corner top-right resize:screenSizeX/2;screenSizeY/2
 bind 3:ctrl;alt  corner bottom-left resize:screenSizeX/2;screenSizeY/2
 bind 4:ctrl;alt  corner bottom-right resize:screenSizeX/2;screenSizeY/2
 
+# Nudge bindings
+bind right:alt;ctrl;cmd   nudge +10%  +0 
+bind left:alt;ctrl;cmd    nudge -10%  +0 
+bind up:alt;ctrl;cmd      nudge +0    -10%
+bind down:alt;ctrl;cmd    nudge +0    +10% 
+
 # Throw Bindings
 bind 1:ctrl;cmd         throw 0 resize
 bind 2:ctrl;cmd         throw 1 resize
